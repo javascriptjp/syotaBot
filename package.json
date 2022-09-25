@@ -1,0 +1,27 @@
+{
+    "dependencies": {
+        "discord.js": "^14.4.0",
+        "dotenv": "^16.0.0"
+    },
+    "name": "syotabot",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "NODE_ENV=production forever start index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/javascriptjp/mumeibot.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/javascriptjp/mumeibot/issues"
+    },
+    "homepage": "https://github.com/javascriptjp/mumeibot#readme",
+    "devDependencies": {
+        "node": "^16.17.0"
+    },
+    "description": ""
+}
