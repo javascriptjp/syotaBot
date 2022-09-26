@@ -19,19 +19,6 @@ module.exports = async (message) => {
             await setTimeout(3000);
             await Reply_message.delete();
         }
-    } else if (message.content.match(/@here/)) {
-        if (UserWarned[message.author.id]) {
-            message.member.ban()
-            await message.delete()
-            await setTimeout(3000);
-            return true
-        } else {
-            UserWarned[message.author.id] = true
-            const Reply_message = await message.channel.send("hereを使わないでください\nDo not use here!!")
-            await message.delete()
-            await setTimeout(3000);
-            await Reply_message.delete();
-        }
     }
     if (UserMessageUtil[message.channel.id]) {
         if (Date.now() - UserMessageUtil[message.channel.id][message.author.id]["LastSendTime"] <= 800) {
