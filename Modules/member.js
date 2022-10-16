@@ -1,6 +1,7 @@
 const config = require("./config.json")
 module.exports = (type, member) => {
     if(type == "join") {
+        member.roles.add('1018533499277426848')
         member.guild.channels.cache.get(config.joinmessages).send({embeds: [{
             color: "79bbff",
             title: member.user.tag,
