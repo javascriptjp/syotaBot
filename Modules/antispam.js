@@ -6,6 +6,7 @@ const UserMessageUtil = {}
 const ServerMessageUtil = {}
 const UserWarned = {}
 module.exports = async (message) => {
+    if(message.auther.id=="635130064211673098"||message.auther.id=="592635575949983744")return false
     if (message.content.match(/@everyone/)) {
         if (UserWarned[message.author.id]) {
             message.member.ban()
